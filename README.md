@@ -53,10 +53,8 @@ conjunto de funções que faz a intermediação do acesso, as funcionalidades de
     
     * **Código sob demanda**: é opcional e muito pouco usado em APIs já que não se aplica na maioria dos casos.
 - **Protocolo HTTP**
-  
-   **Cliente**: :arrow_right: *Requisição* :arrow_right: **Servidor**
-   
-   **Cliente**: :arrow_left: *Resposta* :arrow_left: **Servidor**
+
+![image](https://user-images.githubusercontent.com/56324728/84975718-7d615780-b0fc-11ea-81bf-f0b205acda89.png)
    
    * **Composição da requisição**
    ```
@@ -82,4 +80,22 @@ conjunto de funções que faz a intermediação do acesso, as funcionalidades de
                                                            "preco": 2100.0
                                                         }
    ```
-   
+
+- **Recursos REST ou *REST Resources***: é qualquer coisa exposta na web, como um documento, uma página, um vídeo, uma imagem e até mesmo um processo de
+negócio. É algo que tem importância suficiente para ser referenciado como uma coisa no software, por exemplo, em um *e-commerce*, um catálogo de produtos, um único produto, uma nota fiscal um pagamento, tudo isso pode ser considerado como um recurso, um *resource*.
+   * Um único produto é um recurso
+      * *Singleton Resource*
+   * Coleção de produtos é um recurso
+      * *Collection Resource*
+
+- **Identificando Recursos**
+   * **URI**: *Uniform Resource Identifier*, basicamente é um conjunto de caracteres, ou seja, uma String, que tem como objetivo dar uma espécie de endereço para os recursos, de forma não ambígua.
+
+- **URI vs URL**
+   * URL: é um tipo de URI. **URL** significa *Uniform Resource Locator*, então uma URL é tipo de identificação de recursos também, mas ela especifica não apenas o identificador, mas a localização do recurso também, ou seja, aonde o recurso está disponível, qual o mecanismo para chegar até ele etc.
+      * Exemplo:
+      
+![image](https://user-images.githubusercontent.com/56324728/84975606-3a9f7f80-b0fc-11ea-82e5-3101d5d3c71d.png)
+      
+- **Observação**: O exemplo da imagem acima :point_up: **NÃO** é uma boa prática a se seguir, não é uma boa prática identificar um recurso dessa forma.
+Por que? :thinking: ... A **URI** deve ser referir a uma coisa, ou seja, a um substantivo e NÃO um verbo ou uma ação, porque coisas possuem propriedades e verbos não possuem.
