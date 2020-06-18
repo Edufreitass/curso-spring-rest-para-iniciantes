@@ -53,3 +53,33 @@ conjunto de funções que faz a intermediação do acesso, as funcionalidades de
     
     * **Código sob demanda**: é opcional e muito pouco usado em APIs já que não se aplica na maioria dos casos.
 - **Protocolo HTTP**
+  
+   **Cliente**: :arrow_right: *Requisição* :arrow_right: **Servidor**
+   
+   **Cliente**: :arrow_left: *Resposta* :arrow_left: **Servidor**
+   
+   * **Composição da requisição**
+   ```
+   [MÉTODO] [URI] HTTP/[Versão]                         POST /produtos HTTP/1.1
+   [Cabeçalhos]                                         Content-Type: application/json
+                                                        Accept: application/json
+   [CORPO/PAYLOAD]                                      
+                                                        {
+                                                           "nome": "Notebook i7",
+                                                           "preco": 2100.0
+                                                        }
+   ```
+   
+   * **Composição da resposta**
+   ```
+   HTTP/[Versão] [STATUS]                               HTTP/1.1 201 Created
+   [Cabeçalhos]                                         Location: /produtos/331
+                                                        Content-Type: application/json
+   [CORPO]                                      
+                                                        {
+                                                           "codigo": 331,
+                                                           "nome": "Notebook i7",
+                                                           "preco": 2100.0
+                                                        }
+   ```
+   
