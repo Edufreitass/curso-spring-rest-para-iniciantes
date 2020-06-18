@@ -134,3 +134,8 @@ Mas o que é Spring REST? Uma tecnologia? Um framework? A resposta seria **NÃO*
    * **Comunidade grande e forte**: é uma comunidade que possui um grande número de pessoas e forte no sentido que existem muita ajuda disponíveis em forum, livros, documentaçoes etc.
    * **Popularidade**: a popularidade da tecnologia é muito alta, hoje em dia as empresas que adotaram Java no back-end, a maioria usa *Spring*.
    * **Empregabilidade**: as empresas estão sempre buscando por profissionais que tem o conhecimento sobre essa tecnologia.
+
+- Quem usa Spring? (18/06/2020)
+
+![image](https://user-images.githubusercontent.com/56324728/85027998-ee325f00-b150-11ea-8725-3c861d875ec1.png)
+
