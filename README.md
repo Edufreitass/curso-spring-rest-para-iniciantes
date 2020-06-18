@@ -99,3 +99,38 @@ negócio. É algo que tem importância suficiente para ser referenciado como uma
       
 - **Observação**: O exemplo da imagem acima :point_up: **NÃO** é uma boa prática a se seguir, não é uma boa prática identificar um recurso dessa forma.
 Por que? :thinking: ... A **URI** deve ser referir a uma coisa, ou seja, a um substantivo e NÃO um verbo ou uma ação, porque coisas possuem propriedades e verbos não possuem.
+
+- **A boa prática seria fazer da seguinte forma:**
+
+![image](https://user-images.githubusercontent.com/56324728/85019921-f46f0e00-b145-11ea-8bb0-16e98aeee35e.png)
+
+- **Observação**: Como exibe a imagem acima, a boa prática seria escrever o caminho usando um **substantivo** e não um *verbo*, ficando assim: **/produtos**. E caso você esteja se perguntando, "e como ficaria então o caminho de listar produtos? :thinking:", boa pergunta, a diferenciação viria atráves dos métodos HTTP, **GET, POST, PUT, DELETE** etc.
+
+- **No exemplo abaixo temos um recurso único e para identificar esse recurso único podemos fazer da seguinte forma:**
+
+![image](https://user-images.githubusercontent.com/56324728/85020661-0bfac680-b147-11ea-8ef6-7381fe9a3131.png)
+
+- **Observação**: Como exibe a imagem acima, a identificação de um recurso único viria através de um *código* identificador que inserimos na URI. **Mas veja bem, o ideal é que tenhamos uma interface uniforme e a imagem acima NÃO está uniforme.** Lembra que a coleção de produto**S** exibidas anteriormente nos exemplos acima, era /produto**S** no plural, nesse exemplo acima está no singular, e isso não segue as boas práticas de URI. **O ideal e também  praticamente um consenso do mercado, é utilizar sempre nomes no PLURAL.**
+   * Exemplo: /produto**S**/{codigo}
+   
+   ![image](https://user-images.githubusercontent.com/56324728/85021509-53358700-b148-11ea-8768-82b699f9dc49.png)
+
+***
+## Spring REST :leaves:
+Mas o que é Spring REST? Uma tecnologia? Um framework? A resposta seria **NÃO** para todas as perguntas anteriores.
+**Spring REST** é apenas um **termo** que utilizamos para simplificar a nossa comunicação e dizer que temos uma **REST API desenvolvida com o ecossistema Spring**.
+
+![image](https://user-images.githubusercontent.com/56324728/85023136-b6281d80-b14a-11ea-9e9e-a4efb8087c11.png)
+
+- **Spring** não é um framework apenas, mas um ecossistema de projetos, ou seja, um conjunto de projetos que resolvem vários problemas do dia a dia de um programador **Java**. Ele nos ajuda a criar aplicações com simplicidade e flexibilidade. Como o ecossistema Spring tem muitos projetos, se falarmos apenas a palavra *Spring*, provavelmente estamos referenciando um conjunto de projetos, o ecossistema e não um projeto em especifíco. A ideia é que o Spring ajude a focar no desenvolvimento das regras de negócio e não ficar perdendo tempo desenvolvendo codigos de infraestrutura da aplicação.
+
+- **Por que Spring?**
+   * **Canivete suíço para desenvolvedores Java**: ou seja, ele resolve vários problemas de desenvolvimento de software, desde gerenciamento de objetos, injeção de dependências, acesso a diferentes fontes de dados, como bancos de dados SQL, NoSQL, criação de projetos web, REST API, segurança da aplicação, dentre várias outras.
+   * **Simplicidade**: ele realmente simplifica o desenvolvimento de projetos, o objeto do Spring é reduzir a complexidade.
+   * **Maturidade**: é uma tecnologia bem madura, usada por grandes empresas do mundo todo, então o grau de confiança nessa tecnologia é muito grande.
+   * **Modularidade**: Spring **NÃO** é um projeto gigante que você precisa adicionar tudo para usar. Ele é *organizado* por projetos e até *sub-projetos*, e nós podemos escolher quais deles queremos usar para resolver nossos problemas. Também é possível usar projetos Spring em conjunto com outras tecnologias que não são do mesmo ecossistema, então não é preciso ficar preso apenas ao ecossistema.
+   * **Evolução constante**: a tecnologia está sempre em evolução.
+   * **Open source**: o código de todos os projetos são abertos, isso significa que você pode contribuir com a tecnologia, corrigir algum eventual problema e pode usar livremente, sem ter que pagar nada para VmWare, que é a empresa que está por trás da tecnologia.
+   * **Comunidade grande e forte**: é uma comunidade que possui um grande número de pessoas e forte no sentido que existem muita ajuda disponíveis em forum, livros, documentaçoes etc.
+   * **Popularidade**: a popularidade da tecnologia é muito alta, hoje em dia as empresas que adotaram Java no back-end, a maioria usa *Spring*.
+   * **Empregabilidade**: as empresas estão sempre buscando por profissionais que tem o conhecimento sobre essa tecnologia.
